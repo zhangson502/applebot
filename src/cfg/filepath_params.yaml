@@ -1,0 +1,15 @@
+path_cfg_path: /home/zhangdeyu/applebot/src/cfg/paths
+map_database: /home/zhangdeyu/applebot/src/cfg/map_database/
+cache_linear_accurancy: 0.1
+cache_angular_accurancy: 0.2
+cache_database: /home/zhangdeyu/applebot/src/cfg/cache/
+authorize_key_store_file: /home/zhangdeyu/applebot/src/cfg/.auth/.users
+
+static_routine_path: /home/zhangdeyu/applebot/src/cfg/maps
+static_path_generate_interval: 0.1
+
+#networks
+cam_tcp_ip: 192.168.0.30
+http_server_ip: 192.168.0.30
+
+

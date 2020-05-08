@@ -1,0 +1,8 @@
+{
+	"remoteArgs": {
+		"host": "AppleZhang",
+		"user": "zhangdeyu",
+		"keyfile": "/home/zhangdeyu/.ssh/id_rsa",
+		"cwd": "/home/zhangdeyu/applebot"
+	}
+}

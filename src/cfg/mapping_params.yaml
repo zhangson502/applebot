@@ -1,0 +1,28 @@
+
+#Mapping
+slam_gmapping:
+  base_frame: base_link
+  odom_frame: odom
+  xmin: 0.0
+  ymin: 0.0
+  xmax: 10.0
+  ymax: 10.0
+  delta: 0.05
+  map_update_interval: 2
+  linearUpdate: 0.5
+  angularUpdate: 0.3
+  maxRange: 10
+  maxUrange: 10
+  particals: 30
+  occ_thresh: 0.2
+  transform_publish_period: 0.05
+  llsamplerange: 0.0026
+  llsamplestep: 0.0026
+  kernelSize: 1
+  astep: 0.03
+  stt: 0.015
+  str: 0.015
+  srr: 0.015
+  srt: 0.015
+  lsigma: 0.7
+  minimumScore: 0

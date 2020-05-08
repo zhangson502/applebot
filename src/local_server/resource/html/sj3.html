@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>布局</title>
+<style type="text/css">
+#layout1{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:80%;
+	height:300px;
+}
+#layout2{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:300px;
+	height:300px;
+	margin:0px auto;
+}
+#layout3{
+	margin:0px auto;
+	width:408px;
+}
+#layout3 #left{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:200px;
+	height:300px;
+	float:left;
+}
+#layout3 #right{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:200px;
+	height:300px;
+	float:left;
+}
+#layout4 #left{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:20%;
+	height:300px;
+	float:left;
+	}
+#layout4 #right{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:70%;
+	height:300px;
+	float:left;
+}
+.clear{
+	clear:both;
+	}
+#layout5 #left{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:100px;
+	height:300px;
+	float:left;
+}
+#layout5 #right{
+	background-color:#ccc;
+	border:2px solid #333;
+	height:300px;
+}
+#layout6 #left{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:100px;
+	height:300px;
+	position:absolute;
+	left:0px;
+}
+#layout6 #right{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:100px;
+	height:300px;
+	position:absolute;
+	right:0px;
+}
+#layout6 #center{
+	background-color:#ccc;
+	border:2px solid #333;
+	height:300px;
+	margin-left:104px;
+	margin-right:104px;
+}
+body{
+	margin:0px;
+	padding:0px;
+}
+html,body{
+	margin:0px;
+	height:100%;
+}
+#layout7 {
+	background-color:#ccc;
+	width:300px;
+	height:100%;
+	border:2px solid #333; 
+	margin:0px auto;	
+}
+#layout8 #left{
+	background-color:#ccc;
+	border:2px solid #333;
+	height:300px;
+}
+#layout8 #right{
+	background-color:#ccc;
+	border:2px solid #333;
+	width:100px;
+	height:300px;
+	float:right;
+}
+p{
+	font-size:20px;
+	color:#3300CC;
+	}
+</style>
+</head>
+
+<body>
+<div id="layout1">一列80%自适应宽度</div>
+<br>
+<div id="layout2">一列固定宽度居中</div>
+<br>
+<div id="layout3">
+	<p>两列固定宽度居中：</p>
+	<div id="left">左列</div>
+	<div id="right">右列</div>
+	<div class="clear"></div>
+</div>
+<br>
+<div id="layout4">
+	<p>两列宽度自适应：</p>
+	<div id="left">左列</div>
+	<div id="right">右列</div>
+	<div class="clear"></div>
+</div>
+<br>
+<div id="layout5">
+	<p>两列右列宽度自适应：</p>
+	<div id="left">左列</div>
+	<div id="right">右列</div>
+	<div class="clear"></div>
+</div>
+<br>
+<div id="layout6">
+	<p>三列浮动中间列宽度自适应：</p>
+	<div id="left">左列</div>
+	<div id="right">右列</div>
+	<div id="center">中列</div>
+	<div class="clear"></div>
+</div>
+<br>
+<div id="layout8">
+	<p>右列固定左列自适应：</p>
+	<div id="right">右列</div>
+	<div id="left">左列</div>
+	<div class="clear"></div>
+</div>
+<br>
+<div id="layout7">高度自适应</div>
+</body>
+</html>

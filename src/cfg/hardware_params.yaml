@@ -1,0 +1,15 @@
+
+mcu_driver:
+  serial_port: /dev/ttyUSB0
+  robo_width: 0.265
+  pulse_per_meter: 3800.0
+#hybrid odometry
+odometry_generator:
+  output_frame: odom
+  freq: 20.0
+  sensor_timeout: 1.0
+  odom_used: true
+  imu_used: false
+  vo_used: false
+  debug: false
+  self_diagnose: true

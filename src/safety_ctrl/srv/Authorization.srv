@@ -1,0 +1,7 @@
+string user
+string key
+---
+uint8 auth_ret
+uint8 ADMIN=2
+uint8 USER=1
+uint8 REJECT=0

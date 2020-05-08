@@ -1,0 +1,7 @@
+geometry_msgs/Twist speed
+uint8 priority
+bool initial
+---
+string retStr
+int8 priority
+geometry_msgs/Twist realSpd

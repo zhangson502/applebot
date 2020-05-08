@@ -1,0 +1,6 @@
+nav_msgs/OccupancyGrid m
+string config
+string name
+---
+int8 ret
+string retStr

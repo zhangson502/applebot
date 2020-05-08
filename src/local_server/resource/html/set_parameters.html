@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>表单</title>
+<style type="text/css">
+table{
+	width:500px;
+	font-size:12px;
+	color:#333;
+	}
+th,td{
+	padding:3px;
+	}
+th{
+	text-align:right;
+	font-weight:normal;
+	}
+#layout{
+	width:700px;
+	margin:0 auto;
+	background-color:#f6f6f6;
+	}
+h1{
+	color:#666;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	letter-spacing:-2px;
+	font-size:40px;
+	padding-bottom:15px;
+	border-bottom:2px solid #8fc629;
+	margin-bottom:10px;
+	background-color:#fff;
+	}
+h2{
+	color:#333;
+	font-size:18px;
+	font-weight:normal;
+	padding:10px;
+	}
+.textinput{
+	width:150px;
+	height:20px;
+	border:1px solid #58805f;
+	line-height:21px;
+	}	
+select option{
+	background-color:#cef0d4;
+	}
+select .a{
+	background-color:#FFFFFF;
+	}	
+select .c{
+	background-color:#40854c;
+	color:#FFFFFF;
+	}	
+.textareastyle{
+	width:250px;
+	height:100px;
+	border:1px solid #58805f;
+	}
+.submitbutton{
+	width:100px;
+	height:30px;
+	margin-top:20px;
+	margin-left:186px;
+	font-size:16px;
+	font-weight:bold;
+	border:2px solid #abd8b3;
+	border-right-color:#58805f;
+	border-bottom-color:#58805f;
+	background-color:#a6d3ae;
+	color:#FFFFFF;
+	}	
+</style>
+</head>
+
+<body>
+<div id="layout">
+<h1><center>机器人配置页面</center></h1>
+<h2><center>请仔细阅读以下文本</center></h2>
+<p>    1. 如果您未采集过本区域的地图，请首先采集本区域的地图</br>    2.点击相应按钮执行相应地图绘制程序</p>
+<form name="form1" id="form1" method="POST" action="submit_start">
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	<th>请输入机器人的管理员帐号：</th>
+	<td>
+	<input name="name" type="text" class="textinput" />
+	</td>
+	</tr>
+	<tr>
+	<th>请输入机器人的管理员密码：</th>
+	<td>
+	<input name="passwd" type="text" class="textinput" />
+	</td>
+	</tr>
+	<tr>
+	<th>请输入本地地图名称：</th>
+	<td>
+	<input name="map_name" type="text" class="textinput" />
+	</td>
+	</tr>
+</table>
+<input type="submit" name="mapping" value="绘制地图" class="submitbutton" />
+<input type="submit" name="navigation" value="启动导航" class="submitbutton" />
+</form>
+</div>
+ </body>
+</html>
