@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #C++ ignore
+=======
+>>>>>>> 3fcf244e2389c2f54139decb45f40bde0a94c221
 # Prerequisites
 *.d
 
@@ -13,6 +16,10 @@
 *.pch
 
 # Compiled Dynamic libraries
+<<<<<<< HEAD
+=======
+*.so
+>>>>>>> 3fcf244e2389c2f54139decb45f40bde0a94c221
 *.dylib
 *.dll
 
@@ -30,6 +37,7 @@
 *.exe
 *.out
 *.app
+<<<<<<< HEAD
 
 #python ignore
  Byte-compiled / optimized / DLL files
@@ -224,3 +232,5 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+=======
+>>>>>>> 3fcf244e2389c2f54139decb45f40bde0a94c221
