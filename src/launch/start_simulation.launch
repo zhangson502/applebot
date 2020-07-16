@@ -1,0 +1,9 @@
+<launch>
+    <!--Automatically start ROS core-->
+    <master auto="start"/>
+
+    <node pkg="tf" type="static_transform_publisher" name="base_laser" args="0 0.0 0 0 0 0 /base_link /laser 30" /> 
+
+	<node pkg="costmap_generator" type="costmap_generator.py" name="costmap_generator" output="screen"/>
+
+</launch>

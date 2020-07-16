@@ -1,0 +1,24 @@
+<launch>
+    <!--Automatically start ROS core-->
+    <master auto="start"/>
+    <!--Configure parameters-->
+    <rosparam file="$(find  cfg)/hardware_params.yaml" command="load" />
+ 	<!--Load robot model-->
+    <param name="robot_description" textfile="$(find cfg)/robot_model.urdf"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+	<!--hardware drivers-->
+    <!--Start mcu_driver(drivers for wheels,LEDs, head rotate and any other utilities-->
+    <node name="mcu_driver" pkg="mcu_driver" type="mcu_driver_node.py" output="screen"/>
+    <!--Kalman filter for robot odometry generation-->
+    <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="odometry_generator" />
+    <!--Static TF coordinates settings-->
+    <node pkg="tf" type="static_transform_publisher" name="base_footprint" args="0 0.0 0 0 0 0 /base_footprint /base_link 30" /> 
+
+    <!--Start lidar-->
+    <include file="$(find rplidar_ros)/launch/rplidar_a3.launch"/>
+
+    <!--Start camera driver-->
+    <node name="camera_driver" pkg="cam_driver" type="cam_driver.py" />
+</launch>
